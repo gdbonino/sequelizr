@@ -5,7 +5,7 @@ FROM mcr.microsoft.com/mssql/server:$MSSQL_VERSION
 
 # Create a config directory
 USER 0
-RUN mkdir -p -m 770 /usr/config
+RUN mkdir -p /usr/config
 WORKDIR /usr/config
 
 # Bundle config source
